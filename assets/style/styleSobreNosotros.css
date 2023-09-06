@@ -1,0 +1,28 @@
+
+body{
+    background-color: aqua;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+th{
+    background-color: green;
+    color: white;
+}
+
+  th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 3px solid green;
+    border-spacing: 0;
+    text-align: center;
+ }
+
+ caption{
+    font-style: italic;
+    caption-side: bottom;
+ }

@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/style.css">
-</head>
     <title>Diente feliz </title>
-<header>
-    <nav>
-    <img src="./assets/img/logo diente.png" height="100" width ="100" >
-    <h1  class="color-azul borde">Clinica diente feliz</h1>
-</nav>
-    
-</header>    
-<div id="Presentación"> Hola soy el <strong class= "color-azul" >Dr. Jairo Campos </strong> graduado de la facultad de odontología de la <strong class="color-azul " >UNAM</strong> <br> Generación 1961-1965 </div>
-<img src="./assets/img/Image20230822121455.jpg" height="500" width="400"  >
-<div id="servicios">
-    <h3 class="color-azul borde titulo">Servicios</h3>  
-    <ul>   
-            <li>Extraccion de Dientes</li>
-            <li>Limpieza de Dientes</li>
-            <li>Blanqueamiento</li>
-            <li>Diseñador de sonrisas</li>
-            <li>Tratamiento de caries</li>
-            <li>Empastes</li>
-            <li>Brackets</li>
-            <li> </li>
-        </ul>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+
+
+<body id="cuerpo">
+    <header id="barraSuperior">
+
+        <!-- <img src="/assets/img/logo diente.png" height="100" width ="100" > -->
+        <div class="container">
+        <div id="cabecera" class="row">
+            <div id="logoNombre">
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                    <img id="logo" src="/assets/img/logo diente.png" height="100" width="100">
+                </div>
+                <div class="col-sm-8 col-md-4 col-lg-3">
+                    <h1 class="color-azul borde">Clínica diente feliz</h1>
+                </div>
+            </div>
+            <div class="NavBar" >
+                <button id="botonabrir">Abrir</button>
+                <button id="botonCerrar" >Cerrar </button>
+                <ul class="navList"> 
+                    <li><a href="./index.html" target="_self"> Home</a> </li>
+                    <li> <a href="./BlogSaludDental.html"> Nuestro Blog </a></li>
+                    <li> <a href="./SobreNosotros.html">Conocenos</a></li>
+                    <li><a href="./SobreNosotros.html#equipo">Nuestro equipo</a></li>
+                    <li> <a href="./Formulario.html">Agenda tu cita</a></li>
+
+                </ul>
+            </div>
+        </div>
     </div>
-    <a class="link-colab" target="_blank" href="https://drd3d.com/" >Laboratorios asociados</a>
-        <footer >
-            Blvd. Miguel de Cervantes Saavedra, Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX
-          </footer>
-<body>
-    
+    </header>
+
+    <div id="Presentación"> Hola soy el <strong class="color-azul">Dr. Jairo Campos </strong> graduado de la facultad de
+        <br>odontología de la <strong class="color-azul ">UNAM</strong> Generación 1961-1965
+        <br>Fundé esta clínica en 1970 y formé este gran <a href="./SobreNosotros.html#equipo"
+            target="_blank">equipo</a> para atenderte
+        <br><img src="/assets/img/Image20230822121455.jpg" height="500" width="400">
+    </div>
+    <div id="serviciolink">
+        <div id="servicios">
+            <h3 class="color-azul borde" id="titulo">Servicios</h3>
+            <ul>
+                <li>Extraccion de Dientes</li>
+                <li>Limpieza de Dientes</li>
+                <li>Blanqueamiento</li>
+                <li>Diseñador de sonrisas</li>
+                <li>Tratamiento de caries</li>
+                <li>Empastes</li>
+                <li>Brackets</li>
+                <li><a class="link-colab" target="_blank" href="https://drd3d.com/">Laboratorios asociados</a> </li>
+            </ul>
+        </div>
+        <div id="link">
+            <a href="/assets/HTML/Formulario.html" target="_blank" id="cuadrolink">Agenda tu cita</a>
+        </div>
+    </div>
+    <footer>
+        Encuentranos en: Blvd. Miguel de Cervantes Saavedra, Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5637.141585353277!2d-99.20176072195741!3d19.44087322498262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021a843d2a1b%3A0xe7656ed95e724022!2sBlvd.%20Miguel%20de%20Cervantes%20Saavedra%2C%20Granada%2C%2011529%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1693314929592!5m2!1sen!2smx"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

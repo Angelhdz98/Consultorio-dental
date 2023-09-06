@@ -1,0 +1,33 @@
+div{
+    
+    background-color: aqua;  
+    align-items: center;
+    width:min-content;
+    margin:auto;
+    margin-top: 5%;
+    padding: 15px;
+      
+}
+body{
+    background-color:aquamarine;
+     text-align: center; 
+    align-items: center;
+}
+
+form{
+
+align-items: center;
+width:min-content;
+margin:auto;
+
+}
+input{
+    width: 40%;
+}
+select{
+    width: 40%;
+}
+label{
+    
+}
+

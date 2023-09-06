@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#articuloUno{
+    margin: 20px;
+    padding: 20px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    
+}
+
+
+
+
+#articuloDos{
+    margin: 20px;
+    padding: 20px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    /* display: none; */
+}
+#articuloTres{
+    margin: 20px;
+    padding: 20px;
+    background-color: gainsboro;
+    border: 1px solid black;
+}
+
+div ul li{/*Marcamos cierto orden de eqtiquetas a las cuales les vamos a aplicar cambios a todos */
+    display: inline;
+    margin: 20px;
+
+}
+div ul li a{/*Marcamos cierto orden de eqtiquetas a las cuales les vamos a aplicar cambios a todos */
+    text-decoration: none;
+    
+
+}
+
+img{
+
+    object-fit: cover;
+    width:100%;
+  height:100%;
+}
+footer{
+    background-color: blue;
+}

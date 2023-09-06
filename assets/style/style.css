@@ -1,5 +1,5 @@
-header {
-    display: flex;
+#logo {
+    display:inline-flex;
 
 }
 
@@ -12,25 +12,42 @@ footer{
 }
 
 .color-azul{
-color:rgb(41, 112, 188);
+color:rgb(28, 119, 218);
 
 }
 
 .borde{
 border: 8px inset rgb(35,164,80);
+background-color: cornflowerblue ;
+padding: 5px;
+width: auto;
+margin: auto;
+}
 
+#titulo{
+width: min-content;    
 }
 
 #servicios{
     background-color: gray;
     border-radius: 50px;
     padding: 10px;
-    margin: 0;
-    width: 200px;
+    text-align: left;
+    width: 300px;
+    margin: auto;
     font-weight: bold;
     margin-bottom: 10px;
+    /* align-items: center; 
+    align-content: center;*/
 
 }
+#serviciolink {
+   /* display:flex; */
+    align-items: center; 
+    width: auto;
+
+}
+
 
 .link-colab{
 background-color: rgb(107,140,224);
@@ -45,4 +62,53 @@ li{
 
 .titulo{
     text-align: center;
+}
+#cuerpo{
+    background-color: aquamarine;
+    align-items: center;
+    text-align: center;
+}
+div ul li{
+    display: inline;
+    margin:10px;
+}
+div ul li a{/*Marcamos cierto orden de eqtiquetas a las cuales les vamos a aplicar cambios a todos */
+    text-decoration: none;
+    
+
+}
+#barraSuperior{
+    background-color:cornflowerblue ;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#cabecera{
+}
+#botonCerrar, #botonAbrir{
+    display: none;
+}   
+
+#logoNombre img, h1{
+    /* border: 2px solid black; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+} 
+@media  screen and (max-width:550px) {
+    .NavBar{
+        display: none;
+        
+
+    }
+    
+}
+
+@media  screen and (min-width:550px) {
+
+    #botonAbrir{
+        display:inline ;
+    }
+    
 }
