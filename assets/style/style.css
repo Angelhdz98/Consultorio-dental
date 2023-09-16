@@ -1,114 +1,125 @@
-#logo {
-    display:inline-flex;
-
-}
-
-
-footer{
-    margin-top: 10px;
-    height: 100px;
-    background-color:rgb(62, 134, 230);
-
-}
-
-.color-azul{
-color:rgb(28, 119, 218);
-
-}
-
-.borde{
-border: 8px inset rgb(35,164,80);
-background-color: cornflowerblue ;
-padding: 5px;
-width: auto;
-margin: auto;
-}
-
-#titulo{
-width: min-content;    
-}
-
-#servicios{
-    background-color: gray;
-    border-radius: 50px;
-    padding: 10px;
-    text-align: left;
-    width: 300px;
-    margin: auto;
-    font-weight: bold;
-    margin-bottom: 10px;
-    /* align-items: center; 
-    align-content: center;*/
-
-}
-#serviciolink {
-   /* display:flex; */
-    align-items: center; 
-    width: auto;
-
-}
-
-
-.link-colab{
-background-color: rgb(107,140,224);
-color: aliceblue;
-border-radius: 10px;
-padding: 5px;
-
-}
-li{
-    list-style: none;
-}
-
-.titulo{
-    text-align: center;
-}
-#cuerpo{
-    background-color: aquamarine;
-    align-items: center;
-    text-align: center;
-}
-div ul li{
-    display: inline;
-    margin:10px;
-}
-div ul li a{/*Marcamos cierto orden de eqtiquetas a las cuales les vamos a aplicar cambios a todos */
-    text-decoration: none;
-    
-
-}
-#barraSuperior{
-    background-color:cornflowerblue ;
-    display:flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-#cabecera{
-}
-#botonCerrar, #botonAbrir{
-    display: none;
-}   
-
-#logoNombre img, h1{
-    /* border: 2px solid black; */
-    /* position: relative; */
+.presentacion{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+
+
+
+
+/* incia el codigo necesario para la navBar y el menu de hamburguesa*/
+#logoNombre{
+    display:inline-flex;
+    align-items: center;
+    font-size: x-large;
+    /* border: solid 5px RGB(152, 255, 152); */
+    color:RGB(0, 0, 128);
+}/*juntamos el logo junto con el nombre */
+#cabecera{
+    display: inline-flex;
+    align-items:  center;   
+    background-color:  RGB(211, 211, 211);
+    width: 100%;
+    
+}/*hacemos display inline de el logoNombre y el nav*/
+
+
+ .navList{
+    list-style: none;
+    display: flex; 
+    margin: 1rem;
+}
+.navList li a{
+    text-decoration: none;
+    color: #221682.
+    display: inline-flex; 
+    margin: 1.1rem;
+
+}
+.navList li {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+ 
+.botonAbrir,.botonCerrar {
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    
 } 
-@media  screen and (max-width:550px) {
-    .NavBar{
-        display: none;
+#botonAbrir{
+    border:2px solid #1c1c1c;
+}
+
+@media  screen and (max-width:750px) {
+   
+
+    /* #botonCerrar{
+            display:inline ;
+        } */
+        .botonAbrir,
+        .botonCerrar{
+            display: block;
+            border: 0;
+            font-size: 1.25rem;
+            cursor: pointer;
+            background-color: transparent;
+
+        }
+
+        #cabecera{
+            width: 100%;
+
+        }
+        .botonCerrar{
+            color: aliceblue;
+            font-size: 2rem;
+        }
+       
+        .nav{
+
+            
+            opacity: 0;
+            visibility: hidden;
+            display:flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 0;
+            position: absolute;
+            top:0;
+            right: 0;
+            bottom: 0;
+            background-color:  RGB(0, 0, 128); 
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+        }
+
+        /* div ul li a{ */
+            .navList{
+            text-decoration: none;
+            flex-direction: column;
+                                }
+        .navList li a{
+            color: white;
+            align-items: end;
+                    }
+.navList li{
+    align-items: end;
+    display: flex;
+}
+    
+        .nav.visible {
+            opacity: 1;
+            visibility: visible;
+            
+        }
         
-
-    }
-    
 }
 
-@media  screen and (min-width:550px) {
-
-    #botonAbrir{
-        display:inline ;
-    }
-    
-}
