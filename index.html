@@ -6,76 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diente feliz </title>
 
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/style/styleIndex.css  ">
 </head>
 
 
 <body id="cuerpo">
     <header id="barraSuperior">
-
-        <div id="cabecera">
-            <div id="logoNombre">
-                <div>
-                    <img id="logo" src="/assets/img/logo diente.png" height="100" width="100">
+        <div class="container">
+            <div class="row" id="cabecera">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="logoNombre">
+                    <div>
+                        <img id="logo" src="/assets/img/logo diente.png" height="100" width="100">
+                    </div>
+                    <div id="nombre">
+                        <h1 class="color-azul borde">Clínica diente feliz</h1>
+                    </div>
                 </div>
-                <div id="nombre">
-                    <h1 class="color-azul borde">Clínica diente feliz</h1>
+
+                <button class="botonAbrir" id="botonAbrir"><i class="bi bi-list"></i></i></button>
+                <div class="nav col-lg-6 col-md-6 col-sm-12 col-xs-12" id="nav">
+                    <button class="botonCerrar" id="botonCerrar"><i class="bi bi-x"></i> </button>
+                    <ul class="navList" id="navList">
+                        <li><a href="./index.html" target="_self"> Home</a> </li>
+                        <li> <a href="./BlogSaludDental.html"> Blog </a></li>
+                        <li> <a href="./SobreNosotros.html">Conocenos</a></li>
+                        <li><a href="./SobreNosotros.html#equipo">Nosotros</a></li>
+                        <li> <a href="./sistemaDeRegistro.html">Cita</a></li>
+
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <button class="botonAbrir" id="botonAbrir"><i class="bi bi-list"></i></i></button>
-            <div class="nav" id="nav">
-                <button class="botonCerrar" id="botonCerrar"><i class="bi bi-x"></i> </button>
-                <ul class="navList" id="navList">
-                    <li><a href="./index.html" target="_self"> Home</a> </li>
-                    <li> <a href="./BlogSaludDental.html"> Blog </a></li>
-                    <li> <a href="./SobreNosotros.html">Conocenos</a></li>
-                    <li><a href="./SobreNosotros.html#equipo">Nosotros</a></li>
-                    <li> <a href="./Formulario.html">Cita</a></li>
+    </header>
+    <div class="conteiner">
+        <div class="row">
+            <div class="card presentacion col-lg-5 col-md-4 col-sm-12 " >
+                <img src="/assets/img/dentistapexels.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"> Hola soy el <strong class="colorResaltar">Dr. Jairo Campos </strong> graduado de la facultad de
+                    odontología de la <strong class="colorResaltar ">UNAM</strong> Generación 1961-1965
+                    Fundé esta clínica en 1970 y formé este gran <a href="./SobreNosotros.html#equipo"
+                        target="_blank">equipo</a> para atenderte</p>
+                </div>
+              </div>
+           
 
+            <div class="col-lg-3 col-md-4 col-sm-6" id="servicios">
+                <h3 class="color-azul borde" id="titulo">Servicios</h3>
+                <ul>
+                    <li>Extraccion de Dientes</li>
+                    <li>Limpieza de
+                        Dientes</li>
+                    <li>Blanqueamiento</li>
+                    <li>Diseñador de sonrisas</li>
+                    <li>Tratamiento de caries</li>
+                    <li>Empastes</li>
+                    <li>Brackets</li>
+                    <li><a class="link-colab" target="_blank" href="https://drd3d.com/">Laboratorios asociados</a>
+                    </li>
+                    <li>
+                        <a href="/sistemaDeRegistro.html" target="_blank" id="cuadrolink">Agenda tu cita</a>
+
+                    </li>
                 </ul>
             </div>
-        </div>
-        </div>
-    </header>
 
-    <div class="presentacion" id="presentacion"> <p>Hola soy el <strong id="colorResaltar">Dr. Jairo Campos </strong> graduado de la facultad de
-        odontología de la <strong class="color-azul ">UNAM</strong> Generación 1961-1965
-        Fundé esta clínica en 1970 y formé este gran <a href="./SobreNosotros.html#equipo"
-            target="_blank">equipo</a> para atenderte</p>
-            <img src="/assets/img/dentistapexels.jpg" height="500" width="400">
-    </div>
-    <div id="serviciolink">
-        <div id="servicios">
-            <h3 class="color-azul borde" id="titulo">Servicios</h3>
-            <ul>
-                <li>Extraccion de Dientes</li>
-                <li>Limpieza de 
-                    Dientes</li>
-                <li>Blanqueamiento</li>
-                <li>Diseñador de sonrisas</li>
-                <li>Tratamiento de caries</li>
-                <li>Empastes</li>
-                <li>Brackets</li>
-                <li><a class="link-colab" target="_blank" href="https://drd3d.com/">Laboratorios asociados</a> </li>
-            </ul>
+            <div class="col-lg-4 col-md-4 col-sm-6" >
+                <p id="encuentranosText">Encuentranos en: Blvd. Miguel de Cervantes Saavedra, Granada, Miguel Hidalgo, 11529 Ciudad de México,
+                CDMX</p>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5637.141585353277!2d-99.20176072195741!3d19.44087322498262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021a843d2a1b%3A0xe7656ed95e724022!2sBlvd.%20Miguel%20de%20Cervantes%20Saavedra%2C%20Granada%2C%2011529%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1693314929592!5m2!1sen!2smx"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
-        <div id="link">
-            <a href="/assets/HTML/Formulario.html" target="_blank" id="cuadrolink">Agenda tu cita</a>
-        </div>
+
     </div>
+
     <footer>
-        Encuentranos en: Blvd. Miguel de Cervantes Saavedra, Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX
-        <br>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5637.141585353277!2d-99.20176072195741!3d19.44087322498262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021a843d2a1b%3A0xe7656ed95e724022!2sBlvd.%20Miguel%20de%20Cervantes%20Saavedra%2C%20Granada%2C%2011529%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1693314929592!5m2!1sen!2smx"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </footer>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script> S
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="/assets/scripts/scriptindex.js"></script>
 </body>
 

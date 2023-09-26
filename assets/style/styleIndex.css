@@ -1,10 +1,23 @@
 .presentacion{
     display: flex;
     flex-direction: column;
+    
 }
 
+.colorResaltar{
+    color: #221682;
+}
+#servicios{
+    border: 2px solid #3498DB;
+    background-color:antiquewhite;
+}
+#encuentranosText{
+    color: aqua;
+}
+#servicios ul li{
+    padding: .6rem;
 
-
+}
 
 
 /* incia el codigo necesario para la navBar y el menu de hamburguesa*/
@@ -15,12 +28,12 @@
     /* border: solid 5px RGB(152, 255, 152); */
     color:RGB(0, 0, 128);
 }/*juntamos el logo junto con el nombre */
-#cabecera{
+#barraSuperior{
     display: inline-flex;
     align-items:  center;   
     background-color:  RGB(211, 211, 211);
     width: 100%;
-    
+  
 }/*hacemos display inline de el logoNombre y el nav*/
 
 
@@ -31,7 +44,7 @@
 }
 .navList li a{
     text-decoration: none;
-    color: #221682.
+    color: #221682;
     display: inline-flex; 
     margin: 1.1rem;
 
@@ -50,13 +63,14 @@
     position: absolute;
     top:0;
     right: 0;
+    width: 50px;
     
 } 
 #botonAbrir{
     border:2px solid #1c1c1c;
 }
 
-@media  screen and (max-width:750px) {
+@media  screen and (max-width:770px) {
    
 
     /* #botonCerrar{
@@ -98,7 +112,7 @@
             margin: 0;
             padding: 0;
             box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-
+            width: 30%;
         }
 
         /* div ul li a{ */

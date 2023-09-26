@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style/styleSistemaDeRegistro.css">
+    <title>Agenda tu cita</title>
+</head>
+
+<body>
+    <!--Tabajaremos conel grid para que nuestra pagina sea responsive-->
+
+    <!--Contenedor padre-->
+    <div class="container" id="containerPadre">
+        <h1 id="titulo">Formulario de registro de pacientes</h1>
+
+        <div class="row" id="filaUno">
+            <div class="col">
+                <img src="/assets/img/pexels-photo-12917374.jpeg" alt="">
+
+            </div><!--Cierra primera columna-->
+
+            <div class="col">
+                <form class="formulario">
+
+                    <div class="form-group">
+                        <label for="nombrePaciente">Nombre del paciente:</label>
+                        <input type="text" class="form-control" id="nombrePaciente" placeholder="Nombre Paciente">
+                    </div>
+
+                    <br>
+
+                    <div class="form-group">
+                        <label for="edadPaciente">Edad:</label>
+                        <input type="number" class="form-control" id="edadPaciente" placeholder="Edad" min="0"
+                            max="100">
+                    </div>
+
+                    <br>
+                    <button type="button" class="btn btn-primary" id="btnRegistrarPaciente">Registrar
+                        Paciente</button>
+                </form>
+            </div><!--Cierre columnaDos-->
+        </div> <!--Cierra  div primera fila-->
+    </div>    <!-- fin del contenedor padre -->
+
+    <!-- contenedor para compartir el mensaje de confirmación -->
+    <div class="container" id="mensajeConfirmacion">
+    </div>
+
+    <!--Contenedor para mostrar las tarjetas del paciente-->
+
+    <div class="container">
+        <div class="row" id="contenedorTarjetas">
+
+        </div><!--cierra de la fila-->
+    </div><!--cierre de contenedor -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- <script src="/manipulacionDOM.js"></script>  devinculamos para poder vincular el de de sistema de registro -->
+    <script src="/assets/scripts/sistemaDeRegistro.js"></script>
+</body>
+
+</html>
